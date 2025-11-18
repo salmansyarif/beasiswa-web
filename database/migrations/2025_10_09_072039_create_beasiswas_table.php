@@ -20,8 +20,8 @@ return new class extends Migration
             $table->decimal('ipk', 3, 2);
             $table->string('pilihan_beasiswa')->nullable();
             $table->string('berkas');
-            $table->enum('status', ['Sudah di Verifikasi', 'Belum di Verifikasi'])->default('Belum di Verifikasi');
-            $table->timestamps();
+          $table->enum('status', ['Belum di Verifikasi', 'Sudah di Verifikasi'])->default('Belum di Verifikasi');
+          $table->timestamps();
         });
     }
 
